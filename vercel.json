@@ -4,7 +4,7 @@
         {
             "src": "./index.py",
             "use": "@vercel/python",
-            "config":{"runtime":"python 3.11.6"}
+            "config":{"runtime":"python3.11.6"}
             
         }
     ],
