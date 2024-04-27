@@ -37,8 +37,10 @@ def add():
 def hllo():
     return "hello world"
 
-@app.route("/Update")
-def update():
+@app.route("/Update/<int:sno>")
+def update(sno):
+    # todo=Todo.query.filter_by(sno=sno).first()
+    # db.session.
     return "hello world"
 
 @app.route("/Delete/<int:sno>")

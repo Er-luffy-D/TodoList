@@ -76,8 +76,12 @@
     <div class="table-responsive-sm my-3">
         <h2>To do list</h2>
         {% if allTodo|length==0 %}
-        no record
-        
+        <div class="alert alert-dark my-3" role="alert">
+          <h4 class="alert-heading">OOPS!</h4>
+          <p>Nothing to show here , No records founded in the database</p>
+          <hr>
+          <p class="mb-0">Try adding your first record by filling the above form.</p>
+        </div>        
         {% else %}
         <table class="table table-dark table-striped table-hover">
             <thead>
@@ -104,9 +108,9 @@
                 </td>
               </tr>
             </tbody>
+            {% endfor %}
+            {% endif %}
           </table>
-              {% endfor %}
-              {% endif %}
 
     </div>
 
